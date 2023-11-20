@@ -1,10 +1,4 @@
 {
-    "index": {
-        "title": "Introduction",
-        "theme": {
-            "typesetting": "article"
-        }
-    },
     "commands": "Commands",
     "---": {
         "type": "separator",
