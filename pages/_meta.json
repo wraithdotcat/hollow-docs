@@ -1,0 +1,24 @@
+{
+    "index": {
+        "title": "Inttroduction",
+        "theme": {
+            "typesetting": "article"
+        }
+    },
+    "commands": "Commands",
+    "---": {
+        "type": "separator",
+        "title": "Terms"
+    },
+    "terms-of-service": "Terms of Service",
+    "privacy-policy": "Privacy Policy",
+    "--": {
+        "type": "separator",
+        "title": "Links"
+    },
+    "invite_bot": {
+        "title": "Invite Bot ↗",
+        "href": "https://discord.com/api/oauth2/authorize?client_id=955114176311881749&permissions=8&scope=bot",
+        "newWindow": true
+    }
+}

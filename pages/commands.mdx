@@ -1,0 +1,23 @@
+import { Cards, Card } from "nextra/components";
+import { rem } from "@mantine/core";
+import {
+    IconMessages,
+    IconUserShield,
+    IconBulb,
+    IconPlayCard,
+    IconMusic,
+    IconSettings,
+} from "@tabler/icons-react";
+
+<Cards>
+    <Card icon={<IconMessages />} title="General" href="/commands/general" />
+    <Card
+        icon={<IconUserShield />}
+        title="Moderation"
+        href="/commands/moderation"
+    />
+    <Card icon={<IconBulb />} title="Utility" href="/commands/utility" />
+    <Card icon={<IconPlayCard />} title="Games" href="/commands/games" />
+    <Card icon={<IconMusic />} title="Music" href="/commands/music" />
+    <Card icon={<IconSettings />} title="Settings" href="/commands/settings" />
+</Cards>

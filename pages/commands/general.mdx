@@ -1,0 +1,36 @@
+import { Callout } from 'nextra/components'
+
+export function DropdownBox({ title, description, children }) {
+  return (
+    <details
+      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+    >
+      <summary>
+        <div className="flex flex-col"><strong className="text-lg" style={{color: "#008AE6"}}>{title}</strong>
+        <p className="text-sm">{description}</p></div>
+      </summary>
+      <div className="nx-p-2"><hr className="nx-border-neutral-200/70 contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400"></hr></div>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+
+}
+
+<Callout type="warning" emoji="⚠️">
+    This page is not finished, check back soon.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+    The default prefixes for Hollow are `!`, `h!` and `@Hollow`.
+</Callout>
+
+<DropdownBox title="8" description="Ask the 8 ball a question.">
+    <div>Example: `!8 is wraith the goat?`</div>
+    <div className="mt-4">
+        Alias: <strong style={{ color: "#008AE6" }}>8ball</strong>
+    </div>
+</DropdownBox>
+
+<DropdownBox title="choose" description="Choose between multiple options.">
+        <div>Example: `!choose <option 1> <option 2>`</div>
+</DropdownBox>
